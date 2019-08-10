@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>MyVanillaSPA</title>
+	<link rel="stylesheet" type="text/css" href="css/Menu.css">
+	<link rel="stylesheet" type="text/css" href="css/SPA.css">
+	<link rel="stylesheet" type="text/css" href="css/Report.css">
+	<!-- <script type="text/javascript" src="js/Ajax.js"></script>
+	<script type="text/javascript" src="js/Controller.js"></script> -->
+
+	<script type="text/javascript" src="js/Menu.js"></script>
+	<script type="text/javascript" src="js/Main.js"></script>
+	<script type="text/javascript" src="js/Dom.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+   
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body onload="Main()">	
+	<header>
+		<nav class="Header">
+			<div class="logo">
+				<img src="imgs/plainJS.png"  />
+			</div>
+			<div class="menu-toggle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			  </div>
+			<div class="Navbar" id="nav">
+				<ul>
+					<li class="nav-item active "><a onclick="menu.show('HomePage')" href="#HomePage">Home</a></li>
+					<li class="nav-item "><a onclick="menu.show('Categories')" href="#Categories">Categories</a></li>
+					<li class="nav-item "><a onclick="menu.show('Courses')" href="#Courses">Courses</a></li>
+					<li class="nav-item "><a onclick="menu.show('About')" href="#About">About</a></li>
+				</ul>
+			</div>
+
+		</nav>
+		<!--	<div class="Menu">
+		<span style="cursor:none; background-color:#fff; color:rgb(44, 82, 207); font-weight:bold; padding:10px 0;">MQL Learning platform</span>
+		<span onclick="menu.show('add-author')">Javascript (ES6)</span>
+		<span onclick="menu.show('rechercher')">Tomcat Administration</span>
+		<span onclick="menu.show('')">JEE Design Patterns</span>
+		<span onclick="menu.show('')">Build tools</span>
+		<span onclick="menu.show('')">Software Testing</span>
+		<span onclick="menu.show('')">Logging Solution</span>
+		<span onclick="menu.show('')">Web Services</span>
+	</div>
+	-->
+
+	</header>
+
+	<!-- Home : Landing Page  -->
+
+	<div class="page" id="HomePage">
+
+		<section class="SearchBox">
+			<h1>Search for courses by name or category</h1>
+			<!-- 
+			<input type="text" class="npt2" placeholder="Type author name" size="20" onkeyup="getAuthor()"
+				id="keyword"></input>
+			<input type="button" value="Search" class="SearchBtn" />
+				-->
+			<div class="search-container">
+				<input class="search-input" placeholder="Search by keyword">
+			  <path fill="#009eda" d="m25.14381,22.4446l-5.4416,-5.4416c0.7341,-1.2095 1.1629,-2.6229 1.1641,-4.14c-0.0012,-4.4244 -3.583,-8.00627 -8.0039,-8.0086c-4.42316,0.00233 -8.00622,3.5842 -8.00622,8.0074c0,4.4209 3.58305,8.0039 8.00622,8.0039c1.5171,0 2.9317,-0.4299 4.14,-1.1629l5.4428,5.4428l2.6986,-2.701l0,0l0,0zm-17.23357,-9.5828c0.00465,-2.73478 2.21627,-4.94636 4.95097,-4.95219c2.7337,0.00583 4.9463,2.21742 4.951,4.95219c-0.0047,2.7336 -2.2173,4.9453 -4.951,4.9522c-2.7347,-0.0069 -4.94632,-2.2186 -4.95097,-4.9522z" />
+			</svg>
+				<div class="ac-results-wrapper"></div>
+			</div>
+			
+		</section>
+		<div class="grid-container2">
+			<section class="Quickinfo">
+				<h1>What is this?</h1>
+				<p>This is a single page application that I built using vanilla.JS for a class project. This web
+					application demonstrates how to build SPA without the use of any framework like Angular, React.js or
+					Vue.js.. <br /><br />
+					This is a web application that contains reports of my research on the variety of technologies that
+					we were assigned to study during the summer of my 1st year of <b>Msc. Software Quality (MQL)</b>
+
+				</p>
+			</section>
+			
+			<section class="Quickinfo">
+				<img src="imgs/bg1.png"  />
+			</section>
+		</div>
+		<div class="grid-container2" style="background-color:#FFD740;">
+			<section class="Quickinfo">
+				<img src="imgs/g21.png"  />
+			</section>
+			<section class="intro-text Quickinfo">
+				<h1>Single Page Application?</h1>
+				<p>
+					A single-page application is an app that works inside a browser and does not require page reloading during use. You are using this type of applications every day. These are, for instance: <b>Gmail, Google Maps, Facebook</b> or <b>GitHub.</b><br />
+					SPAs are all about serving an outstanding UX by trying to imitate a natural environment in the browser, no page reloads, no extra wait time. It is just one web page that you visit which then loads all other content using JavaScript, which they heavily depend on.	
+				</p>
+			</section>
+		</div>
+		<div class="grid-container2">
+			<section class="Quickinfo">
+				<h1>Features</h1>
+				<p>This is a single page application that I built using vanilla.JS for a class project. This web
+					application demonstrates how to build SPA without the use of any framework like Angular, React.js or
+					Vue.js.. <br /><br />
+					This is a web application that contains reports of my research on the variety of technologies that
+					we were assigned to study during the summer of my 1st year of <b>Msc. Software Quality (MQL)</b>
+				</p>
+			</section>
+			<section class="Quickinfo">
+				<img src="imgs/g21.png" />
+			</section>
+		</div>
+
+	</div>
+
+
+	<!-- About Page  -->
+
+	<div class="Hidden page" id="About">
+		<div class="pageTitle">
+			<h3 class="PageTitle">About</h3>
+		</div>
+		<div class="Container">
+			<h2>Project Description</h2>
+			<p>MyVanillaSPA is a single page application (SPA) created using plain Javascript, without the use of any
+				framework. The purpose of making this web app is to use my skills in Software developement and Web
+				design to create an academic report for my summer research on Software Engineering related techniques,
+				technologies, and methodologies.
+				This application may also represents a prototype for e-learning / tutorial websites. 
+			</p>
+				<br />
+			<h2>Built using</h2>
+			<p>This application was built using Javascript, HTML5, and CSS3. </p>
+			<div>
+				<img src="imgs/htmlcssjss.png" height="60px" width="160px" />
+			</div>
+				<br /><br />
+			<h2>Features</h2>
+			<ul>
+				<li>VanillaJS - No Javascript framework</li>
+				<li>SPA - Single Page Application</li>
+				<li>PWA - Progressive Web Application</li>
+				<li>No Bootstrap - Pure HTML/CSS</li>
+			</ul>
+				<br />
+			<h2>Software Quality MSc.</h2>
+			<div>
+				<img src="imgs/images.png" height="80px" width="200px" />
+			</div>
+		</div>
+	</div>
+
+	<!-- Categories Page  -->
+
+	<div class="Hidden page" id="Categories">
+		<div class="pageTitle">
+			<h3 class="PageTitle">Categories</h3>
+		</div>
+		<div class="">
+			<div class="grid-container2">
+				<div class="grid-item cat cat1" id="Programming">
+					<a>Programming Languages</a>
+				</div>
+				<div class="grid-item cat cat2" id="Servers">
+					<a>Web/Application Servers</a>
+				</div>
+				<div class="grid-item cat cat3" id="Build">
+					<a>Build Tools</a>
+				</div>
+				<div class="grid-item cat cat4" id="Methods">
+					<a>Methodologies</a>
+				</div>
+				<div class="grid-item cat cat5" id="Methods">
+					<a>Testing Solutions</a>
+				</div>
+				<div class="grid-item cat cat6" id="Methods">
+					<a>Logging Solutions</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Courses Page  -->
+
+	<div class="Hidden page" id="Courses">
+		
+		<div class="pageTitle">
+			<h3 class="PageTitle">Courses</h3>
+		</div>
+
+		<div class="grid-container">
+			<div class=" grid-item" onclick="menu.show('Javascript')">
+				<img src="imgs/JavaScript-logo.png" />
+				<h3>Javascript</a>
+			</div>
+
+			<div class=" grid-item" onclick="menu.show('Tomcat')">
+				<img src="imgs/Tomcat-logo.svg.png"  />
+				<h3>Administration Tomcat</h3>
+			</div>
+			<div class=" grid-item" >
+				<img src="imgs/r2ka1qiH.png"  />
+				<h3>Web Services</h3>
+			</div>
+
+			<div class=" grid-item" >
+				<img src="imgs/1280px-Apache-Ant-logo.svg.png"  />
+				<h3>Ant</h3>
+			</div>
+
+			<div class=" grid-item" >
+				<img src="imgs/1280px-Maven_logo.svg.png"  />
+				<h3>Maven</h3>
+			</div>
+
+			<div class=" grid-item">
+				<img src="imgs/gradle.png"  />
+				<h3>Gradle</h3>
+			</div>
+
+			<div class=" grid-item">
+				<img src="imgs/system-testing-830x631.png"  />
+				<h3>Software Testing</h3>
+			</div>
+
+			<div class=" grid-item">
+				<img src="imgs/design-patterns-logo-2.png"  />
+				<h3>Design Patterns</h3>
+			</div>
+			<div class=" grid-item">
+				<img src="imgs/log-file-1-504262.png"  />
+				<h3>Logging Solutions</h3>
+			</div>
+		</div>
+
+
+	</div>
+
+	
+	<!-- Course Content Page -->
+	<div class="Hidden ContentPage" id="Javascript">
+
+		<div class="Path">
+			<a  onclick="menu.show('Courses')">Courses</a>/
+			<a class="PathActive" onclick="menu.show('Javascript')">Javascript</a>
+		</div>
+		<header class="CourseHeader">
+			<img src="imgs/JavaScript-logo.png" width="200px" height="200px" style="float:left; margin-right:30px;" />
+			<h2>Javascript (ES6)</h2>
+			<p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed
+				language used for both client-side and server-side scripting. Its primary use is in rendering and
+				performing manipulation of web pages.</p>
+			<button class="btn"><i class="fa fa-download"></i> Version Word</button>
+			<div class="clear"></div>
+		</header>
+		<div class="Report">
+			<div class="Report-nav ">
+				<h2 class="center">Navigation</h2>
+				<ul>
+					<li  onclick="menu.show('Intro')">Introduction</li>
+					<li  onclick="menu.show('OOP')">OOP in Javascript</li>
+					<li>DOM Manipulation</li>
+					<li>JSON</li>
+					<li>AJAX</li>
+				</ul>
+			</div>
+			<div class="Report-content" id="Intro">
+					<h1>Introduction</h1>
+					<p>
+						JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.
+					</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="Hidden ContentPage" id="Tomcat">
+		<div class="Path">
+			<a  onclick="menu.show('Courses')">Courses</a>/
+			<a  onclick="menu.show('Programming')">Web / Application Servers</a>/
+			<a class="PathActive" onclick="menu.show('Tomcat')">Apache Tomcat Administration</a>
+		</div>
+		<header>
+			<img src="imgs/Tomcat-logo.svg.png" width="200px" height="200px" style="float:left; margin-right:30px;" />
+			<h2>Administration Tomcat</h2>
+			<p>wkqwo qwoqwefnsjf powrq qpowjdqpwodj apowdaj qwpo qwpdjad qwoqwoo qpwoqpw qwdq uqwodjnqwkjdbqi doihsdofh
+				oiaffouh owirbvkj h</p>
+		</header>
+	</div>
+
+
+	<!-- Page Footer -->
+	<footer>
+		<div class="FooterCnt">
+			<div class="grid-container2">
+				<div class="grid-itm" >
+				<h4>My-Vanilla-SPA</h4>
+					<p class="FooterAbout">
+						This is a web application that contains reports of my research on the variety of technologies that we were assigned to study during the summer of my 1st year of Msc. Software Quality (MQL) 
+					</p>
+				</div>
+				<div class="grid-itm">
+				</div>
+				<div class="grid-itm">
+					<h4>Categories</h4>
+					<ul>
+						<li>Programming Languages</li>
+						<li>Web/Application Servers</li>
+						<li>Build tools</li>
+						<li>Methodologies</li>
+						<li>Software testing</li>
+						<li>Logging solutions</li>
+					</ul>
+				</div>
+				<div class="grid-itm">
+					<h4>Contact me</h4>
+					<div class="contact-item">
+						<i class="fa fa-envelope"></i> 
+						<span>aitali.ismael@gmail.com</span>
+					</div>
+					<div class="contact-item">
+						<i class="fa fa-phone"></i> 
+						<span >+212 (0) 6367-50276</span>
+					</div>
+					<div class="contact-item">
+						<i class="fa fa-github"></i> 
+						<span>/jeendar</span>
+					</div>
+					<div class="contact-item">
+						<i class="fa fa-linkedin"></i> 
+						<span>/in/ismail-aitali</span>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<div class="FooterBtm">
+			Developed &amp; Designed by <b style="color:#F0DB4F;"> AIT ALI Ismail </b> | Master Qualite du Logiciel (MQL) |
+			2018-2020
+		</div>
+	</footer>
+	
+	<script type="text/javascript">
+
+	</script>
+</body>
+
+</html>
