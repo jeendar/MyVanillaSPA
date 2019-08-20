@@ -14,6 +14,7 @@
 	<script type="text/javascript" src="js/Main.js"></script>
 	<script type="text/javascript" src="js/Dom.js"></script>
 	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="js/Courses.js"></script>
    
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -23,7 +24,9 @@
 	<header>
 		<nav class="Header">
 			<div class="logo">
-				<img src="imgs/plainJS.png"  />
+				<a href="#HomePage" >
+					<img src="imgs/plainJS.png"/>
+				</a>
 			</div>
 			<div class="menu-toggle" id="mobile-menu">
 				<span class="bar"></span>
@@ -189,15 +192,14 @@
 	<!-- Courses Page  -->
 
 	<div class="Hidden page" id="Courses">
-		
 		<div class="pageTitle">
 			<h3 class="PageTitle">Courses</h3>
-		</div>
-
-		<div class="grid-container">
-			<div class=" grid-item" onclick="menu.show('Javascript')">
+		  </div>
+		<div class="grid-container" id="CoursesTemplate">
+		<!--
+			<div id="MyCourse" class="grid-item" onclick="menu.show('Javascript')">
 				<img src="imgs/JavaScript-logo.png" />
-				<h3>Javascript</a>
+				<h3>Javascript</h3>
 			</div>
 
 			<div class=" grid-item" onclick="menu.show('Tomcat')">
@@ -237,6 +239,7 @@
 				<img src="imgs/log-file-1-504262.png"  />
 				<h3>Logging Solutions</h3>
 			</div>
+		-->
 		</div>
 
 
@@ -245,7 +248,6 @@
 	
 	<!-- Course Content Page -->
 	<div class="Hidden ContentPage" id="Javascript">
-
 		<div class="Path">
 			<a  onclick="menu.show('Courses')">Courses</a>/
 			<a class="PathActive" onclick="menu.show('Javascript')">Javascript</a>
@@ -271,19 +273,16 @@
 				</ul>
 			</div>
 			<div class="Report-content" id="Intro">
-					<h1>Introduction</h1>
-					<p>
-						JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.
-					</p>
+				<h1>Introduction</h1>
+				<p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.</p>
 			</div>
-
 		</div>
 	</div>
 
 	<div class="Hidden ContentPage" id="Tomcat">
 		<div class="Path">
-			<a  onclick="menu.show('Courses')">Courses</a>/
-			<a  onclick="menu.show('Programming')">Web / Application Servers</a>/
+			<a onclick="menu.show('Courses')">Courses</a>/
+			<a onclick="menu.show('Programming')">Web / Application Servers</a>/
 			<a class="PathActive" onclick="menu.show('Tomcat')">Apache Tomcat Administration</a>
 		</div>
 		<header>
@@ -322,7 +321,7 @@
 					<h4>Contact me</h4>
 					<div class="contact-item">
 						<i class="fa fa-envelope"></i> 
-						<span>aitali.ismael@gmail.com</span>
+						<span><a >aitali.ismael@gmail.com</a></span>
 					</div>
 					<div class="contact-item">
 						<i class="fa fa-phone"></i> 

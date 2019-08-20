@@ -2,11 +2,11 @@ body{
 	margin: 0;
 	padding: 0;
 }
-.logo > *{
+.logo > a > img{
 	float:left;
 	margin:auto 30px;
 	width: 200px;
-	height:70px;
+	height:80px;
 
 }
 .Header{

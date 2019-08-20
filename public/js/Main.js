@@ -149,6 +149,87 @@ function Main(){
 	  };
 	  
 	  autocomplete(opts);
+
+	  // Courses Page : listing content dynamically with JSON and Template Literals 
 	  
-	
+	  const coursesData = [
+		{
+		  name: "Javascript (ES6)",
+		  category: "Programming Language",
+		  photo: "https://i.imgur.com/CquSSS8.png",
+		  desc : "JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.",
+		  id: "Javascript"
+		},
+		{
+		  name: "Apache Tomcat",
+		  category: "Web / Application Servers",
+		  photo: "https://i.imgur.com/0lZbRfD.png",
+		  id: "Tomcat"
+		},
+		{
+		  name: "Apache Maven",
+		  category: "Build tools",
+		  photo: "https://i.imgur.com/1liZEdw.png",
+		  id: "Maven"
+		},
+		{
+		  name: "Software Testing",
+		  category: "DevOps",
+		  photo: "https://i.imgur.com/YSuVYXz.png",
+		  id: "Testing"
+		},
+		{
+		  name: "Apache Ant",
+		  category: "Build tools",
+		  photo: "https://i.imgur.com/nmEAOPu.png",
+		  id: "Ant"
+		},
+		{
+		  name: "Apache Gradle",
+		  category: "Build tools",
+		  photo: "https://i.imgur.com/uepgbXI.png",
+		  id: "Gradle"
+		},
+		{
+		  name: "Web Services",
+		  category: "Methodologies",
+		  photo: "https://i.imgur.com/M36ZJqh.png",
+		  id: "WebServices"
+		},
+		{
+		  name: "Design Patterns",
+		  category: "Methodologies",
+		  photo: "https://i.imgur.com/Decr6lz.png",
+		  id: "DesignPatterns"
+		},
+		{
+		  name: "Jetty",
+		  category: "Web / Application Servers",
+		  photo: "https://i.imgur.com/xjJd9Ya.png",
+		  id: "Jetty"
+		},
+		{
+		  name: "Logging Solutions",
+		  category: "DevOps",
+		  photo: "https://i.imgur.com/gFh5XDt.png",
+		  id: "Logging"
+		}
+	];
+	function coursesTemplate(course){
+		  return `
+			<div id="MyCourse" class="grid-item" onclick="menu.show('${course.id}')">
+				<img  src="${course.photo}" />
+				<h3>${course.name} </h3>
+				<h4>Category : ${course.category} </h4>
+			</div>
+	  `
+	  }
+	  document.getElementById("CoursesTemplate").innerHTML = `
+	  ${coursesData.map(coursesTemplate).join('')}
+	  `
+	  
+	  // Templating the course page using JSON and Template Literals 
+
+	  
+
 }

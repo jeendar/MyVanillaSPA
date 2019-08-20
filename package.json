@@ -1,7 +1,7 @@
 {
-  "name": "spa-sitepoint",
+  "name": "SPA-VanillaJS",
   "version": "1.0.0",
-  "description": "This is a project demo that uses Vanilla JS to build a Single Page Application.",
+  "description": "This is a project that uses Vanilla JS to build a Single Page Application.",
   "main": "server.js",
   "directories": {
     "lib": "lib"
