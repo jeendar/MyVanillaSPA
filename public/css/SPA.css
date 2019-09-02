@@ -4,9 +4,6 @@ html {
 	overflow-y: scroll;
     font-family: 'PT Sans', sans-serif;
 }
-body{
-	widows: 100%;
-}
 .clear{
 	clear: both;	
 }
@@ -17,7 +14,8 @@ body{
 	text-align:center;
 }
 
-/*General Layouts*/
+/*Global Layout*/
+
 
 #About{
 	min-height:720px;
@@ -67,7 +65,6 @@ section {
 }
 .page{
 	min-height:800px;
-	padding-top:100px;
 	background-color: #eee;	
 }
 
@@ -131,16 +128,22 @@ section {
 
 /* Home - Landing Page */
 
+
+
 .Quickinfo{
 	text-align: center;
 	font-size:28px;
 	transition: 0.3s;
 	margin:20px;
-}	
-.Quickinfo > p{
 	color:#333;
 	font-weight:normal;
 	font-size:20px;
+}	
+.Quickinfo > h1{
+	font-size:38px;
+	color:#173d77;
+}
+.Quickinfo > p{
 	text-align:justify;
 	font-family: 'PT Sans', sans-serif;
 }
@@ -150,6 +153,12 @@ section {
 }
 
 /* Search*/
+.scrollDown a {
+	font-size:18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#fff;
+}
 
 .npt2{
 	width:60%;
@@ -168,19 +177,34 @@ section {
 	border:4px solid #275aa7;
 	transition:0.6s ;
 }
+@media screen and (max-width:768px){
+	
+	.search-input {
+		border-radius: 100px;
+		background-color: #ffffff;
+		width: 90%;
+	}
+	.intro-text{
+		
+	}
+}
+.search-container{
+	min-height:300px;
+}
+
 .search-input:focus {
     outline: none;
 	border-color:#48A1B8;
 	transition:0.6s ;
 	border-radius:0;
 }
-.ac-results-wrapper {
+.results-wrapper {
     width: 60%;
     background-color: #ffffff;
 	z-index:9;
 	margin:auto;
 }
-.ac-results-wrapper a {
+.results-wrapper a {
     display: none;
     color: #3A69B2;
 	vertical-align:middle;
@@ -189,15 +213,15 @@ section {
     text-decoration: none;
     text-align: left;
 }
-.ac-results-wrapper a:hover {
+.results-wrapper a:hover {
     background-color: #3A69B2;
     color: white;
 }
-.ac-results-wrapper a:focus {
+.results-wrapper a:focus {
     background-color: #3A69B2;
     color: white;
 }
-.ac-results-wrapper i {
+.results-wrapper i {
     float: right;
     color: #BABDC0;
 }
@@ -210,13 +234,13 @@ section {
 
 .SearchBox{
 	text-align:center;
-	min-height: 700px;
-	padding-top:200px;
+	min-height: 780px;
+	padding-top:300px;
 	color:#eee;
 	font-size: 22px;
 	font-weight: bold;	
 	background: rgb(2,0,36);
-	background-image: url('../imgs/slide.jpg');
+	background-image: url('../imgs/lide.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -318,4 +342,16 @@ footer{
 }
 .contact-item > span {
 	margin-left:10px;
+}
+.feature{
+	padding:10px ;
+	font-size:22px;
+	font-family: 'PT Sans', sans-serif;
+}
+.features{
+	text-align:left;
+	margin-left:20%;
+}
+.features > span > img{
+	align-items:center;
 }

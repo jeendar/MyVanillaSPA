@@ -71,10 +71,10 @@
 	font-size:28px;
 }
 .Report-nav{
-	background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(39,90,167,1) 0%, rgba(23,61,119,1) 100%); 
+	background-color: #3465A4;
 	padding:10px;
 	border-radius:10px 0 0 10px;
-	border-right:2px solid #173d77;
+	border-right:1px solid #777;
 	min-width:250px;
 	max-width:300px;
 }
@@ -83,16 +83,22 @@
 	margin:0;
 	padding:0 10px;
 }	
+.Report-nav > ul > li > a{
+	color:#fff	;
+	text-decoration: none;
+	font-size:20px;
+
+}
+
 .Report-nav > ul > li {
 	color:#f7f7f7	;
-	padding:5px 10px;
-	margin:10px 0;		
-	font-size:20px;
-	border-left:7px solid #F0DB4F	;
+	margin:10px 0;	
+	padding:5px 10px;	
+	border-left:7px solid #F0DB4F;
 	border-radius:2px;
 }
 .Report-nav > ul > li:hover {
-	background-color: #F0DB4F;
+	background-color: #49A5B8;
 	cursor:pointer;
 	color:#222;
 	font-weight:bold;
@@ -101,6 +107,9 @@
 .Report-content{
 	padding:30px;
 	display:block;
+	height:600px;
+	overflow-y: scroll;
+	
 }
 .Report-content > p{
 	font-size:20px;

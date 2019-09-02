@@ -75,7 +75,7 @@ function Main(){
 		  };
 	  
 		function setEls() {
-		  var wrapEl = contEl.querySelectorAll('.ac-results-wrapper')[0];
+		  var wrapEl = contEl.querySelectorAll('.results-wrapper')[0];
 		  var i = options.numResults;
 		  while (i--) {
 			var anchorEl = document.createElement('a');
@@ -150,7 +150,7 @@ function Main(){
 	  
 	  autocomplete(opts);
 
-	  // Courses Page : listing content dynamically with JSON and Template Literals 
+	  // Courses Page : listing content dynamically with JSON and ES6 Template Literals 
 	  
 	  const coursesData = [
 		{
@@ -228,8 +228,14 @@ function Main(){
 	  ${coursesData.map(coursesTemplate).join('')}
 	  `
 	  
-	  // Templating the course page using JSON and Template Literals 
-
-	  
-
+	  // Templating the course content page using JSON and Template Literals 
+	
+	  function CourseContentTemplate(course){
+		return `
+		
+	`
+	}
+	document.getElementsByClassName("ContentPage").innerHTML = `
+	${coursesData.map(CourseContentTemplate).join('')}
+	`
 }
