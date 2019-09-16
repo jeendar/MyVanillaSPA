@@ -1,0 +1,30 @@
+    <?xml version="1.0" encoding="utf-8" ?>
+    <soap:Envelope xmlns:xssi="http://www.w3.org/2001/XMLSchema-instance">
+
+	    <soap:Body>
+
+    		<MQL19WebService xmlns="http://tempuri.org/">   
+
+				<CourseID>int</CourseID>
+
+		    </MQL19WebService>
+
+	    </soap:Body>
+
+    </soap:Envelope>
+
+
+
+
+<?xml version='1.0' encoding='UTF-8'?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" 
+				   xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+      <SOAP-ENV:Body>
+         <SOAP-ENV:Fault>
+         <faultcode xsi:type="xsd:string">SOAP-ENV:Client</faultcode>
+        <faultstring xsi:type="xsd:string">
+            Failed to locate method (GetCourseID) in class (GetCourse)
+         </faultstring>
+    </SOAP-ENV:Fault>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

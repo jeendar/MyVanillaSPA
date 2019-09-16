@@ -44,6 +44,13 @@
     font-weight: bold;
 }
 
+.doc {
+    width: 1200px;
+    height: 600px;
+    border: 0;
+    padding: 10px;
+}
+
 .ContentPage>header {
     padding: 30px;
     background-color: #fff;
@@ -65,7 +72,7 @@
     height: 100%;
     margin: 0;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     border-radius: 10px;
     min-height: 600px;
 }
@@ -112,9 +119,7 @@
 }
 
 .Report-content {
-    padding: 30px;
     display: block;
-    height: 600px;
     overflow-y: scroll;
 }
 
