@@ -72,7 +72,7 @@
                 <a href="#QuickInfo">Scroll down</a>
             </div>
         </section>
-        <div class="grid-container2">
+        <div class="grid-container2" style=" padding:40px; background: rgb(219,239,255);  background: linear-gradient(8deg, rgba(219,239,255,1) 0%, rgba(227,241,235,1) 100%); ">
 
             <section class="Quickinfo">
                 <img src="imgs/bg1.png" />
@@ -87,7 +87,7 @@
             </section>
 
         </div>
-        <div class="grid-container2" style="background-color:#fff;">
+        <div class="grid-container2" style="border-top:5px solid #FFD640;padding:40px; background: rgb(255,215,64); background: linear-gradient(45deg, rgba(255,215,64,1) 0%, rgba(255,136,12,1) 100%);">
             <section class="intro-text Quickinfo">
                 <h1>What's a SPA?</h1>
                 <p>
@@ -101,7 +101,7 @@
             </section>
 
         </div>
-        <div class="grid-container2">
+        <div class="grid-container2" style="border-top:5px solid #c3e6d6;   padding:40px; background: rgb(219,239,255);background: linear-gradient(194deg, rgba(219,239,255,1) 0%, rgba(238,238,238,1) 100%); ">
             <section class="Quickinfo">
                 <img src="imgs/g3.png" />
             </section>
@@ -146,7 +146,6 @@
             <ul>
                 <li>VanillaJS - No Javascript framework</li>
                 <li>SPA - Single Page Application</li>
-                <li>PWA - Progressive Web Application</li>
                 <li>No Bootstrap - Pure HTML/CSS</li>
             </ul>
             <br />
@@ -204,6 +203,7 @@
 
     <!-- Course Content Page -->
 
+    <!--  1 : Javascript -->
     <div class="Hidden ContentPage" id="Javascript">
         <div class="Path">
             <a onclick="menu.show('Courses')">Courses</a>/
@@ -212,32 +212,223 @@
         <header id="CourseHeader">
             <img src="imgs/JavaScript-logo.png" width="200px" height="200px" style="float:left; margin-right:30px;" />
             <h2>Javascript</h2>
-            <p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.
+            <p>JavaScript (JS) est un langage de programmation léger, interprété ou compilé just-in-time avec des fonctions de première classe. Bien qu'il soit plus connu comme langage de script pour les pages Web, de nombreux environnements autres que les navigateurs l'utilisent également, tels que Node.js, Apache CouchDB et Adobe Acrobat. JavaScript est un langage dynamique basé sur le prototype, comportant plusieurs paradigmes et supporte les styles orienté-objet, impératif et déclaratif (par exemple, programmation fonctionnelle).
             </p>
             <button class="btn"><i class="fa fa-download"></i> Version Word</button>
             <div class="clear"></div>
         </header>
+
         <div class="Report">
-            <div class="Report-nav ">
-                <h2 class="center">Navigation</h2>
-                <ul>
-                    <li><a href="#Intro">Introduction</a></li>
-                    <li><a href="#OOP">OOP in Javascript</a></li>
-                    <li><a href="#DOM">DOM Manipulation</a></li>
-                    <li><a href="#JSON">JSON</a></li>
-                    <li><a href="#AJAx">AJAX</a></li>
-                </ul>
-            </div>
-            <div class="Report-content">
-                <iframe class="doc" src="https://docs.google.com/document/d/e/2PACX-1vTXqtx9AJddfNURx_kN5g--bzXQDibLEYSHac6yF0VvWbxnLTSyWg-s1o1Nm4BqdAdKQj0jIuuPhuow/pub?embedded=true"></iframe>
-            </div>
+            <iframe class="doc" src="https://docs.google.com/document/d/e/2PACX-1vQDmHqvA0qXhq9dK_JenSByi5czp6efeIx9Lueu2a7E2wHSgso1HiSWrKZa_FvK1ikzW7bontrXDVyD/pub?embedded=true"></iframe>
         </div>
-
-
     </div>
+
+    <!--  2 : Tomcat -->
+    <div class="Hidden ContentPage" id="Tomcat">
+        <div class="Path">
+            <a onclick="menu.show('Courses')">Courses</a>/
+            <a class="PathActive" onclick="menu.show('Tomcat')">Tomcat</a>
+        </div>
+        <header id="CourseHeader">
+            <img src="imgs/Tomcat-logo.svg.png" width="200px" height="200px" style="float:left; margin-right:30px;" />
+            <h2>Apache Tomcat</h2>
+            <p>
+                Apache Tomcat est un conteneur web libre de servlets et JSP. Issu du projet Jakarta, c'est un des nombreux projets de l’Apache Software Foundation. Il implémente les spécifications des servlets et des JSP du Java Community Process6, est paramétrable par des fichiers XML et des propriétés, et inclut des outils pour la configuration et la gestion. Il comporte également un serveur HTTP. 
+            </p>
+            <button class="btn"><i class="fa fa-download"></i> Version Word</button>
+            <div class="clear"></div>
+        </header>
+
+        <div class="Report">
+            <iframe class="doc" src="https://docs.google.com/document/d/e/2PACX-1vR_v0MtK0UOzUCuD3Zul2Z1GY56VHFwBAFzBoH-Jk043gYA1a9YtcN9QfasIVQXcw7rfUD-mrGqXeig/pub?embedded=true"></iframe>
+        </div>
+    </div>
+
+    <!--  3 : Maven -->
+    <div class="Hidden ContentPage" id="Maven">
+        <div class="Path">
+            <a onclick="menu.show('Courses')">Courses</a>/
+            <a class="PathActive" onclick="menu.show('Maven')">Maven</a>
+        </div>
+        <header id="CourseHeader">
+            <img src="imgs/1280px-Maven_logo.svg.png" width="200px" height="200px" style="float:left; margin-right:30px;" />
+            <h2>Maven</h2>
+            <p>JavaScript (JS) est un langage de programmation léger, interprété ou compilé just-in-time avec des fonctions de première classe. Bien qu'il soit plus connu comme langage de script pour les pages Web, de nombreux environnements autres que les navigateurs l'utilisent également, tels que Node.js, Apache CouchDB et Adobe Acrobat. JavaScript est un langage dynamique basé sur le prototype, comportant plusieurs paradigmes et supporte les styles orienté-objet, impératif et déclaratif (par exemple, programmation fonctionnelle).
+            </p>
+            <button class="btn"><i class="fa fa-download"></i> Version Word</button>
+            <div class="clear"></div>
+        </header>
+
+        <div class="Report">
+            <iframe class="doc" src="https://docs.google.com/document/d/e/2PACX-1vQDmHqvA0qXhq9dK_JenSByi5czp6efeIx9Lueu2a7E2wHSgso1HiSWrKZa_FvK1ikzW7bontrXDVyD/pub?embedded=true"></iframe>
+        </div>
+    </div>
+
+    <!--  4 : Software Testing -->
+    <div class="Hidden ContentPage" id="Testing">
+        <div class="Path">
+            <a onclick="menu.show('Courses')">Courses</a>/
+            <a class="PathActive" onclick="menu.show('Testing')">Software Testing</a>
+        </div>
+        <header id="CourseHeader">
+            <img src="imgs/testingqa.png" width="200px" height="200px" style="float:left; margin-right:30px;" />
+            <h2>Software Testing</h2>
+            <p>JavaScript (JS) est un langage de programmation léger, interprété ou compilé just-in-time avec des fonctions de première classe. Bien qu'il soit plus connu comme langage de script pour les pages Web, de nombreux environnements autres que les navigateurs l'utilisent également, tels que Node.js, Apache CouchDB et Adobe Acrobat. JavaScript est un langage dynamique basé sur le prototype, comportant plusieurs paradigmes et supporte les styles orienté-objet, impératif et déclaratif (par exemple, programmation fonctionnelle).
+            </p>
+            <button class="btn"><i class="fa fa-download"></i> Version Word</button>
+            <div class="clear"></div>
+        </header>
+
+        <div class="Report">
+            <iframe class="doc" src="https://docs.google.com/document/d/e/2PACX-1vT76uJLrbhL_lDFVNYSXMyClyZiYHHGoZahpydsPum21fPpyoMESJ5HcWBRS_0YqXkv9XPlSfzwSBvH/pub?embedded=true"></iframe>
+        </div>
+    </div>
+
+    <!--  5 : Apache Ant -->
+    <div class="Hidden ContentPage" id="Ant">
+        <div class="Path">
+            <a onclick="menu.show('Courses')">Courses</a>/
+            <a class="PathActive" onclick="menu.show('Ant')">Apache Ant</a>
+        </div>
+        <header id="CourseHeader">
+            <img src="imgs/1280px-Apache-Ant-logo.svg.png" width="200px" height="200px" style="float:left; margin-right:30px;" />
+            <h2>Apache Ant</h2>
+            <p>JavaScript (JS) est un langage de programmation léger, interprété ou compilé just-in-time avec des fonctions de première classe. Bien qu'il soit plus connu comme langage de script pour les pages Web, de nombreux environnements autres que les navigateurs l'utilisent également, tels que Node.js, Apache CouchDB et Adobe Acrobat. JavaScript est un langage dynamique basé sur le prototype, comportant plusieurs paradigmes et supporte les styles orienté-objet, impératif et déclaratif (par exemple, programmation fonctionnelle).
+            </p>
+            <button class="btn"><i class="fa fa-download"></i> Version Word</button>
+            <div class="clear"></div>
+        </header>
+
+        <div class="Report">
+            <iframe class="doc" src="https://docs.google.com/document/d/e/2PACX-1vQDmHqvA0qXhq9dK_JenSByi5czp6efeIx9Lueu2a7E2wHSgso1HiSWrKZa_FvK1ikzW7bontrXDVyD/pub?embedded=true"></iframe>
+        </div>
+    </div>
+    
+    <!--  6 : Apache Gradle -->
+    <div class="Hidden ContentPage" id="Gradle">
+        <div class="Path">
+            <a onclick="menu.show('Courses')">Courses</a>/
+            <a class="PathActive" onclick="menu.show('Gradle')">Gradle</a>
+        </div>
+        <header id="CourseHeader">
+            <img src="imgs/gradle.png" width="200px" height="200px" style="float:left; margin-right:30px;" />
+            <h2>Gradle</h2>
+            <p>JavaScript (JS) est un langage de programmation léger, interprété ou compilé just-in-time avec des fonctions de première classe. Bien qu'il soit plus connu comme langage de script pour les pages Web, de nombreux environnements autres que les navigateurs l'utilisent également, tels que Node.js, Apache CouchDB et Adobe Acrobat. JavaScript est un langage dynamique basé sur le prototype, comportant plusieurs paradigmes et supporte les styles orienté-objet, impératif et déclaratif (par exemple, programmation fonctionnelle).
+            </p>
+            <button class="btn"><i class="fa fa-download"></i> Version Word</button>
+            <div class="clear"></div>
+        </header>
+
+        <div class="Report">
+            <iframe class="doc" src="https://docs.google.com/document/d/e/2PACX-1vQDmHqvA0qXhq9dK_JenSByi5czp6efeIx9Lueu2a7E2wHSgso1HiSWrKZa_FvK1ikzW7bontrXDVyD/pub?embedded=true"></iframe>
+        </div>
+    </div>
+
+    <!--  7 : Web Services -->
     <div class="Hidden ContentPage" id="WebServices">
+        <div class="Path">
+            <a onclick="menu.show('Courses')">Courses</a>/
+            <a class="PathActive" onclick="menu.show('WebServices')">Web Services</a>
+        </div>
+        <header id="CourseHeader">
+            <img src="imgs/r2ka1qiH.png" width="200px" height="200px" style="float:left; margin-right:30px;" />
+            <h2>Web Services</h2>
+            <p>Il s'agit d'une technologie permettant à des applications de dialoguer à distance via Internet, et ceci indépendamment des plates-formes et des langages sur lesquelles elles reposent. Pour ce faire, les services Web s'appuient sur un ensemble de protocoles Internet très répandus (XML, HTTP), afin de communiquer. Cette communication est basée sur le principe de demandes et réponses, effectuées avec des messages XML.</p>
+            <button class="btn"><i class="fa fa-download"></i> Version Word</button>
+            <div class="clear"></div>
+        </header>
 
+        <div class="Report">
+                <iframe class="doc" src="https://docs.google.com/document/d/e/2PACX-1vTXqtx9AJddfNURx_kN5g--bzXQDibLEYSHac6yF0VvWbxnLTSyWg-s1o1Nm4BqdAdKQj0jIuuPhuow/pub?embedded=true"></iframe>
+        </div>
     </div>
+
+    <!--  8 : Design Patterns -->
+    <div class="Hidden ContentPage" id="DesignPatterns">
+        <div class="Path">
+            <a onclick="menu.show('Courses')">Courses</a>/
+            <a class="PathActive" onclick="menu.show('DesignPatterns')">Design Patterns</a>
+        </div>
+        <header id="CourseHeader">
+            <img src="imgs/design-patterns-logo-2.png" width="200px" height="200px" style="float:left; margin-right:30px;" />
+            <h2>Design Patterns</h2>
+            <p>Il s'agit d'une technologie permettant à des applications de dialoguer à distance via Internet, et ceci indépendamment des plates-formes et des langages sur lesquelles elles reposent. Pour ce faire, les services Web s'appuient sur un ensemble de protocoles Internet très répandus (XML, HTTP), afin de communiquer. Cette communication est basée sur le principe de demandes et réponses, effectuées avec des messages XML.</p>
+            <button class="btn"><i class="fa fa-download"></i> Version Word</button>
+            <div class="clear"></div>
+        </header>
+
+        <div class="Report">
+                <iframe class="doc" src="https://docs.google.com/document/d/e/2PACX-1vTXqtx9AJddfNURx_kN5g--bzXQDibLEYSHac6yF0VvWbxnLTSyWg-s1o1Nm4BqdAdKQj0jIuuPhuow/pub?embedded=true"></iframe>
+        </div>
+    </div>
+
+
+<!--
+
+    		<div class="Path">
+			<a  onclick="menu.show('Courses')">Courses</a>/
+			<a class="PathActive" onclick="menu.show('Javascript')">Javascript</a>
+		</div>
+		<header id="CourseHeader">
+			<img src="imgs/JavaScript-logo.png" width="200px" height="200px" style="float:left; margin-right:30px;" />
+			<h2>Javascript</h2>
+			<p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.
+			</p>
+			<button class="btn"><i class="fa fa-download"></i> Version Word</button>
+			<div class="clear"></div>
+		</header>
+		<div class="Report">
+			<div class="Report-nav ">
+				<h2 class="center">Navigation</h2>
+				<ul>
+					<li><a href="#Intro">Introduction</a></li>
+					<li><a href="#OOP">OOP in Javascript</a></li>
+					<li><a href="#DOM">DOM Manipulation</a></li>
+					<li><a href="JSON">JSON</a></li>
+					<li><a href="#AJAx">AJAX</a></li>
+				</ul>
+			</div>
+			<div class="Report-content">
+				<div  class="" id="Intro">
+					<h1>Introduction</h1>
+					<p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.</p>
+	
+				</div>		
+				<div  class="" id="">
+					<h1>dd</h1>
+					<p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.</p>
+				</div>	
+				<div  class="" id="">
+					<h1>dd</h1>
+					<p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.</p>
+				</div>	
+				<div  class="" id="">
+					<h1>dd</h1>
+					<p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.</p>
+				</div>	
+				<div  class="" id="">
+					<h1>dd</h1>
+					<p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.</p>
+				</div>	
+				<div  class="" id="">
+					<h1>dd</h1>
+					<p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.</p>
+				</div>	
+				<div  class="" id="">
+					<h1>dd</h1>
+					<p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.</p>
+				</div>	
+				<div  class="" id="OOP">
+					<h1>OOP</h1>
+					<p>JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.</p>
+				</div>
+			</div>
+		</div>
+
+
+ -->
+
+
 
 
     <!-- Page Footer -->

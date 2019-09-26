@@ -1,10 +1,11 @@
 .Path {
     padding: 15px;
-    margin-bottom: 30px;
     background-color: #304BA8;
     color: #fff;
     border-radius: 50px;
     font-weight: bold;
+    width:80%;
+    margin:30px auto;
 }
 
 .Path>a {
@@ -24,19 +25,13 @@
     font-weight: bold;
 }
 
-.CourseHeader>p {
-    font-size: 18px;
-    text-align: justify;
-}
-
 .ContentPage {
     background-color: #eee;
     padding: 20px;
-    padding-top: 140px;
+    padding-top: 120px;
     color: #204a87;
     font-family: 'Montserrat', Tahoma, Verdana, sans-serif;
-    min-height: 660px;
-    height: 100%;
+    min-height: 100%;
 }
 
 .ContentPage>h2 {
@@ -45,10 +40,10 @@
 }
 
 .doc {
-    width: 1200px;
-    height: 600px;
+    width: 100%;
     border: 0;
     padding: 10px;
+    min-height:80vh;
 }
 
 .ContentPage>header {
@@ -57,74 +52,27 @@
     border-radius: 10px;
     border: 1px solid #ddd;
     min-height: 200px;
+    width:80%;
+    margin:0 auto;
     margin-bottom: 20px;
 }
 
 .ContentPage>header>p {
     color: #333;
+    font-size: 18px;
+    text-align: justify;
+
 }
 
 .Report {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     font-size: 16px;
     font-family: 'PT Sans', sans-serif;
-    height: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto auto;
+    margin: 0 auto;
+    display:block ;
+    width:80%;
+    height:100%;
     border-radius: 10px;
-    min-height: 600px;
-}
+    }
 
-.Report-nav>h2 {
-    color: #f7f7f7;
-    font-size: 28px;
-}
-
-.Report-nav {
-    background-color: #3465A4;
-    padding: 10px;
-    border-radius: 10px 0 0 10px;
-    border-right: 1px solid #777;
-    min-width: 250px;
-    max-width: 300px;
-}
-
-.Report-nav>ul {
-    margin: 0;
-    padding: 0 10px;
-}
-
-.Report-nav>ul>li>a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.Report-nav>ul>li {
-    color: #f7f7f7;
-    margin: 10px 0;
-    padding: 5px 10px;
-    border-left: 7px solid #F0DB4F;
-    border-radius: 2px;
-}
-
-.Report-nav>ul>li:hover {
-    background-color: #49A5B8;
-    cursor: pointer;
-    color: #222;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.Report-content {
-    display: block;
-    overflow-y: scroll;
-}
-
-.Report-content>p {
-    font-size: 20px;
-    font-weight: lighter;
-    color: #222;
-}

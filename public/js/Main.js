@@ -1,3 +1,4 @@
+//END
 var menu;
 
 function Main() {
