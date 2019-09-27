@@ -154,65 +154,84 @@ function Main() {
     // Courses Page : listing content dynamically with JSON and ES6 Template Literals 
 
     const coursesData = [{
+            id: "Javascript",
             name: "Javascript (ES6)",
             category: "Programming Language",
             photo: "https://i.imgur.com/CquSSS8.png",
-            desc: "JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of web pages.",
-            id: "Javascript"
+            desc: "JavaScript (JS) est un langage de programmation léger, interprété ou compilé just-in-time avec des fonctions de première classe. Bien qu'il soit plus connu comme langage de script pour les pages Web, de nombreux environnements autres que les navigateurs l'utilisent également, tels que Node.js, Apache CouchDB et Adobe Acrobat. JavaScript est un langage dynamique basé sur le prototype, comportant plusieurs paradigmes et supporte les styles orienté-objet, impératif et déclaratif (par exemple, programmation fonctionnelle).",
+            report : "https://docs.google.com/document/d/e/2PACX-1vQDmHqvA0qXhq9dK_JenSByi5czp6efeIx9Lueu2a7E2wHSgso1HiSWrKZa_FvK1ikzW7bontrXDVyD/pub?embedded=true" 
         },
         {
+            id: "Tomcat",
             name: "Apache Tomcat",
             category: "Web / Application Servers",
             photo: "https://i.imgur.com/0lZbRfD.png",
-            id: "Tomcat"
+            desc:" Apache Tomcat est un conteneur web libre de servlets et JSP. Issu du projet Jakarta, c'est un des nombreux projets de l’Apache Software Foundation. Il implémente les spécifications des servlets et des JSP du Java Community Process6, est paramétrable par des fichiers XML et des propriétés, et inclut des outils pour la configuration et la gestion. Il comporte également un serveur HTTP. ",
+            report :"https://docs.google.com/document/d/e/2PACX-1vR_v0MtK0UOzUCuD3Zul2Z1GY56VHFwBAFzBoH-Jk043gYA1a9YtcN9QfasIVQXcw7rfUD-mrGqXeig/pub?embedded=true" ,
         },
         {
+            id: "Maven",
             name: "Apache Maven",
             category: "Build tools",
             photo: "https://i.imgur.com/1liZEdw.png",
-            id: "Maven"
+            desc : "",
+            report : ""
         },
         {
+            id: "Testing",
             name: "Software Testing",
             category: "DevOps",
             photo: "https://i.imgur.com/YSuVYXz.png",
-            id: "Testing"
+            desc : "Le test de logiciel est un processus qui évalue la fonctionnalité d'une application logicielle dans le but de déterminer si le logiciel développé répond ou non aux exigences spécifiées et d'identifier les défauts afin de garantir que le produit est exempt de défauts afin de produire un produit de qualité.",
+            report : "https://docs.google.com/document/d/e/2PACX-1vT76uJLrbhL_lDFVNYSXMyClyZiYHHGoZahpydsPum21fPpyoMESJ5HcWBRS_0YqXkv9XPlSfzwSBvH/pub?embedded=true",
         },
         {
+            id: "Ant",
             name: "Apache Ant",
             category: "Build tools",
             photo: "https://i.imgur.com/nmEAOPu.png",
-            id: "Ant"
+            desc: "",
+            report : ""
         },
         {
+            id: "Gradle",
             name: "Apache Gradle",
             category: "Build tools",
             photo: "https://i.imgur.com/uepgbXI.png",
-            id: "Gradle"
+            desc : "",
+            report : ""
         },
         {
+            id: "WebServices", 
             name: "Web Services",
             category: "Methodologies",
             photo: "https://i.imgur.com/M36ZJqh.png",
-            id: "WebServices"
+            desc : "Il s'agit d'une technologie permettant à des applications de dialoguer à distance via Internet, et ceci indépendamment des plates-formes et des langages sur lesquelles elles reposent. Pour ce faire, les services Web s'appuient sur un ensemble de protocoles Internet très répandus (XML, HTTP), afin de communiquer. Cette communication est basée sur le principe de demandes et réponses, effectuées avec des messages XML.</p>",
+            report : "https://docs.google.com/document/d/e/2PACX-1vTXqtx9AJddfNURx_kN5g--bzXQDibLEYSHac6yF0VvWbxnLTSyWg-s1o1Nm4BqdAdKQj0jIuuPhuow/pub?embedded=true"
         },
         {
+            id: "DesignPatterns",
             name: "Design Patterns",
             category: "Methodologies",
             photo: "https://i.imgur.com/Decr6lz.png",
-            id: "DesignPatterns"
+            desc : "",
+            report : ""
         },
         {
+            id: "Jetty",
             name: "Jetty",
             category: "Web / Application Servers",
             photo: "https://i.imgur.com/xjJd9Ya.png",
-            id: "Jetty"
+            desc : "",
+            report : ""
         },
         {
+            id: "Logging",
             name: "Logging Solutions",
             category: "DevOps",
             photo: "https://i.imgur.com/gFh5XDt.png",
-            id: "Logging"
+            desc : "",
+            report : ""
         }
     ];
 
@@ -225,8 +244,37 @@ function Main() {
 			</div>
 	  `
     }
+    
     document.getElementById("CoursesTemplate").innerHTML = `
 	  ${coursesData.map(coursesTemplate).join('')}
-	  `
+      `
+      
+    function ContentTemplate(course) {
+        return `
+  
+        <div class="Hidden ContentPage" id="${course.id}">
+        <div class="Path">
+        <a onclick="menu.show('Courses')">Courses</a>/
+        <a class="PathActive" onclick="menu.show('${course.id}')">${course.name}</a>
+    </div>
+        <header id="CourseHeader">
+            <img src="${course.photo}" width="200px" height="200px" style="float:left; margin-right:30px;" />
+            <h2>${course.name}</h2>
+            <p>${course.desc}</p>
+            <button class="btn"><i class="fa fa-download"></i> Version Word</button>
+            <div class="clear"></div>
+        </header>
 
+        <div class="Report">
+            <iframe class="doc" src="${course.report}"></iframe>
+        </div>
+    </div>
+
+	  `
+    }
+    
+    document.getElementById("CoursesContent").innerHTML = `
+	  ${coursesData.map(ContentTemplate).join('')}
+      `
+    
 }
