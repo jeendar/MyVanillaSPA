@@ -10,7 +10,7 @@
 
 .Path>a {
     padding: 7px 20px;
-    margin: 0 15px;
+    margin: 0 5px;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
@@ -46,6 +46,10 @@
     min-height:80vh;
 }
 
+.courseImg{
+    max-height:250px;
+    width: 200px;
+}
 .ContentPage>header {
     padding: 30px;
     background-color: #fff;

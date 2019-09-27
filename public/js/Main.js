@@ -1,4 +1,18 @@
-//END
+function move() {
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        elem.style.width = width + '%';
+      }
+    }
+  } 
+
+
 var menu;
 
 function Main() {
@@ -252,19 +266,21 @@ function Main() {
     function ContentTemplate(course) {
         return `
   
-        <div class="Hidden ContentPage" id="${course.id}">
+    <div class="Hidden ContentPage" id="${course.id}"}>
         <div class="Path">
-        <a onclick="menu.show('Courses')">Courses</a>/
-        <a class="PathActive" onclick="menu.show('${course.id}')">${course.name}</a>
-    </div>
+            <a onclick="menu.show('Courses')">Courses</a>/
+            <a onclick="">${course.category}</a>/
+            <a class="PathActive" onclick="menu.show('${course.id}')">${course.name}</a>
+            </div>
         <header id="CourseHeader">
-            <img src="${course.photo}" width="200px" height="200px" style="float:left; margin-right:30px;" />
+            <div class="courseImg">
+                <img src="${course.photo}" width="100%"  style="float:left; margin-right:30px;" />
+            </div>
             <h2>${course.name}</h2>
             <p>${course.desc}</p>
             <button class="btn"><i class="fa fa-download"></i> Version Word</button>
             <div class="clear"></div>
         </header>
-
         <div class="Report">
             <iframe class="doc" src="${course.report}"></iframe>
         </div>
