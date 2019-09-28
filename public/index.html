@@ -2,32 +2,27 @@
 <html>
 
 <head>
-    <meta charset="ISO-8859-1">
     <title>MyVanillaSPA</title>
     <link rel="stylesheet" type="text/css" href="css/Menu.css">
     <link rel="stylesheet" type="text/css" href="css/SPA.css">
     <link rel="stylesheet" type="text/css" href="css/Report.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+    <meta name="author" content="Ismail AITALI">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <script type="text/javascript" src="js/Menu.js"></script>
     <script type="text/javascript" src="js/Main.js"></script>
     <script type="text/javascript" src="js/Dom.js"></script>
-    <script type="text/javascript" src="js/search.js"></script>
-    <script type="text/javascript" src="js/Courses.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body onload="Main()">
-    <div id="myProgress">
-        <div id="myBar"></div>
-    </div>
-
     <nav>
         <div class="logo">
-            <a  onclick="menu.show('HomePage')">
-				<img src="imgs/logo.png"/>
-			</a>
+            <a onclick="menu.show('HomePage')">
+                <img src="imgs/logo.png" />
+            </a>
         </div>
         <ul class="Navbar" id="nav">
             <li class="nav-item active ">
@@ -43,31 +38,22 @@
                 <a onclick="menu.show('About')" href="#About">About</a>
             </li>
         </ul>
-
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-
     </nav>
-
 
     <!-- Home : Landing Page  -->
 
     <div class="page" id="HomePage">
-
         <section class="SearchBox">
             <h1>Search for courses by keyword</h1>
-            <!-- 
-			<input type="text" class="npt2" placeholder="Type author name" size="20" onkeyup="getAuthor()"
-				id="keyword"></input>
-			<input type="button" value="Search" class="SearchBtn" />
-				-->
             <div class="search-container">
                 <input class="search-input" placeholder="Type your keyword">
-                <path fill="#009eda" d="m25.14381,22.4446l-5.4416,-5.4416c0.7341,-1.2095 1.1629,-2.6229 1.1641,-4.14c-0.0012,-4.4244 -3.583,-8.00627 -8.0039,-8.0086c-4.42316,0.00233 -8.00622,3.5842 -8.00622,8.0074c0,4.4209 3.58305,8.0039 8.00622,8.0039c1.5171,0 2.9317,-0.4299 4.14,-1.1629l5.4428,5.4428l2.6986,-2.701l0,0l0,0zm-17.23357,-9.5828c0.00465,-2.73478 2.21627,-4.94636 4.95097,-4.95219c2.7337,0.00583 4.9463,2.21742 4.951,4.95219c-0.0047,2.7336 -2.2173,4.9453 -4.951,4.9522c-2.7347,-0.0069 -4.94632,-2.2186 -4.95097,-4.9522z"
-                />
+                <path fill="#009eda"
+                    d="m25.14381,22.4446l-5.4416,-5.4416c0.7341,-1.2095 1.1629,-2.6229 1.1641,-4.14c-0.0012,-4.4244 -3.583,-8.00627 -8.0039,-8.0086c-4.42316,0.00233 -8.00622,3.5842 -8.00622,8.0074c0,4.4209 3.58305,8.0039 8.00622,8.0039c1.5171,0 2.9317,-0.4299 4.14,-1.1629l5.4428,5.4428l2.6986,-2.701l0,0l0,0zm-17.23357,-9.5828c0.00465,-2.73478 2.21627,-4.94636 4.95097,-4.95219c2.7337,0.00583 4.9463,2.21742 4.951,4.95219c-0.0047,2.7336 -2.2173,4.9453 -4.951,4.9522c-2.7347,-0.0069 -4.94632,-2.2186 -4.95097,-4.9522z" />
                 </svg>
                 <div class="results-wrapper"></div>
             </div>
@@ -75,27 +61,31 @@
                 <a href="#QuickInfo">Scroll down</a>
             </div>
         </section>
-        <div class="grid-container2" style=" padding:40px; background: rgb(219,239,255);  background: linear-gradient(8deg, rgba(219,239,255,1) 0%, rgba(227,241,235,1) 100%); ">
-
+        <div class="grid-container2"
+            style=" padding:40px; background: rgb(219,239,255);  background: linear-gradient(8deg, rgba(219,239,255,1) 0%, rgba(227,241,235,1) 100%); ">
             <section class="Quickinfo">
                 <img src="imgs/home/bg1.png" />
             </section>
-
             <section class="Quickinfo">
                 <h1>What is this?</h1>
-                <p>This is a single page application that I built using vanilla.JS for a class project. This web application demonstrates how to build SPA without the use of any framework like Angular, React.js or Vue.js.. <br /><br /> This is a web application
-                    that contains reports of my research on the variety of technologies that we were assigned to study during the summer of my 1st year of <b>Msc. Software Quality (MQL)</b>
-
+                <p>This is a single page application that I built using vanilla.JS for a class project. This web
+                    application demonstrates how to build SPA without the use of any framework like Angular, React.js or
+                    Vue.js.. <br /><br /> This is a web application
+                    that contains reports of my research on the variety of technologies that we were assigned to study
+                    during the summer of my 1st year of <b>Msc. Software Quality (MQL)</b>
                 </p>
             </section>
-
         </div>
-        <div class="grid-container2" style="border-top:5px solid #FFD640;padding:40px; background: rgb(255,215,64); background: linear-gradient(45deg, rgba(255,215,64,1) 0%, rgba(255,136,12,1) 100%);">
+        <div class="grid-container2"
+            style="border-top:5px solid #FFD640;padding:40px; background: rgb(255,215,64); background: linear-gradient(45deg, rgba(255,215,64,1) 0%, rgba(255,136,12,1) 100%);">
             <section class="intro-text Quickinfo">
                 <h1>What's a SPA?</h1>
                 <p>
-                    A single-page application is an app that works inside a browser and does not require page reloading during use. You are using this type of applications every day. These are, for instance: <b>Gmail,
-						Google Maps, Facebook</b> or <b>GitHub.</b><br /> SPAs are all about serving an outstanding UX by trying to imitate a natural environment in the browser, no page reloads, no extra wait time. It is just one web page that you visit which then loads
+                    A single-page application is an app that works inside a browser and does not require page reloading
+                    during use. You are using this type of applications every day. These are, for instance: <b>Gmail,
+                        Google Maps, Facebook</b> or <b>GitHub.</b><br /> SPAs are all about serving an outstanding UX
+                    by trying to imitate a natural environment in the browser, no page reloads, no extra wait time. It
+                    is just one web page that you visit which then loads
                     all other content using JavaScript, which they heavily depend on.
                 </p>
             </section>
@@ -104,7 +94,8 @@
             </section>
 
         </div>
-        <div class="grid-container2" style="border-top:5px solid #c3e6d6;   padding:40px; background: rgb(219,239,255);background: linear-gradient(194deg, rgba(219,239,255,1) 0%, rgba(238,238,238,1) 100%); ">
+        <div class="grid-container2"
+            style="border-top:5px solid #c3e6d6;   padding:40px; background: rgb(219,239,255);background: linear-gradient(194deg, rgba(219,239,255,1) 0%, rgba(238,238,238,1) 100%); ">
             <section class="Quickinfo">
                 <img src="imgs/home/g3.png" />
             </section>
@@ -113,39 +104,38 @@
                 <p>
                     Let's mention some advantages of using SPA :
                 </p>
-                <p><b>Performance:</b> SPA diminish the necessity of the browser to perform requests to the server which impact in the velocity of our application and the user experience.</p>
-                <p><b>Better UX :</b> Since the velocity of the application is improved the user iteration flows and feels better.</p>
+                <p><b>Performance:</b> SPA diminish the necessity of the browser to perform requests to the server which
+                    impact in the velocity of our application and the user experience.</p>
+                <p><b>Better UX :</b> Since the velocity of the application is improved the user iteration flows and
+                    feels better.</p>
                 <p>Of course, there are also disadvantages, let’s mention some:</p>
-                <p><b> Heavy first load :</b> Since the first load of the app may be loading a bunch of resources it might feel slow.</p>
+                <p><b> Heavy first load :</b> Since the first load of the app may be loading a bunch of resources it
+                    might feel slow.</p>
                 <p><b>Security : </b>SPA apps are less secure since it enables hackers to perform Cross-Site Scripting.
                 </p>
-
             </section>
-
         </div>
-
     </div>
 
-
     <!-- About Page  -->
-
     <div class="Hidden page" id="About">
         <div class="pageTitle">
             <h3 class="PageTitle">About</h3>
         </div>
         <div class="Container">
             <h2>Project Description</h2>
-
-            <p>MyVanillaSPA is a single page application (SPA) created using plain Javascript, without the use of any framework. The purpose of making this web app is to use my skills in Software developement and Web design to create an academic report for
-                my summer research on Software Engineering related techniques, technologies, and methodologies. This application may also represents a prototype for e-learning / tutorial websites.
+            <p>MyVanillaSPA is a single page application (SPA) created using plain Javascript, without the use of any
+                framework. The purpose of making this web app is to use my skills in Software developement and Web
+                design to create an academic report for
+                my summer research on Software Engineering related techniques, technologies, and methodologies. This
+                application may also represents a prototype for e-learning / tutorial websites.
             </p>
-
-            <img src="imgs/LogoMakr_1ajQSj.png"  width="350px"/>
+            <img src="imgs/LogoMakr_1ajQSj.png" width="350px" />
             <br /><br />
             <h2>Built using</h2>
             <p>This application was built using Javascript, HTML5, and CSS3. </p>
             <div>
-                <img src="imgs/htmlcssjss.png" height="60px" width="160px"/>
+                <img src="imgs/htmlcssjss.png" height="60px" width="160px" />
             </div>
             <br /><br />
             <h2>Features</h2>
@@ -168,8 +158,6 @@
         <div class="pageTitle">
             <h3 class="PageTitle">Categories</h3>
         </div>
-
-
         <div class="">
             <div class="grid-container2">
                 <div class="grid-item cat cat6" id="Programming">
@@ -191,9 +179,7 @@
         </div>
     </div>
 
-
     <!-- Courses Page  -->
-
     <div class="Hidden page" id="Courses">
         <div class="pageTitle">
             <h3 class="PageTitle">Courses</h3>
@@ -203,17 +189,11 @@
         </div>
     </div>
 
-
     <!-- Course Content Page -->
-
-
     <div id="CoursesContent">
         <!-- Selected course's content will go here -->
     </div>
-</div>
-
-
-
+    </div>
 
     <!-- Page Footer -->
     <footer>
@@ -222,7 +202,8 @@
                 <div class="grid-itm">
                     <h4>My-Vanilla-SPA</h4>
                     <p class="FooterAbout">
-                        This is a web application that contains reports of my research on the variety of technologies that we were assigned to study during the summer of my 1st year of Msc. Software Quality (MQL)
+                        This is a web application that contains reports of my research on the variety of technologies
+                        that we were assigned to study during the summer of my 1st year of Msc. Software Quality (MQL)
                     </p>
                 </div>
                 <div class="grid-itm">
@@ -245,16 +226,14 @@
                         <i class="fa fa-linkedin"></i>
                         <span>linkedin.com/in/ismail-aitali</span>
                     </div>
-
                 </div>
             </div>
-
         </div>
         <div class="FooterBtm">
-            Developed &amp; Designed by <b style="color:#F0DB4F;"> AIT ALI Ismail </b> | Master Qualite du Logiciel (MQL) | 2018-2020
+            Developed &amp; Designed by <b style="color:#F0DB4F;"> AIT ALI Ismail </b> | Master Qualite du Logiciel
+            (MQL) | 2018-2020
         </div>
     </footer>
-
     <script type="text/javascript">
     </script>
 </body>

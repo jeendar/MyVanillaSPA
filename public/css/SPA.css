@@ -4,20 +4,8 @@ html {
     overflow-y: scroll;
     font-family: 'PT Sans', sans-serif;
     transition: 0.3s all;
-
 }
 
-#myProgress {
-    width: 100%;
-    background-color: grey;
-  }
-  
-  #myBar {
-    width: 1%;
-    height: 30px;
-    background-color: green;
-  }
-  
 .clear {
     clear: both;
 }

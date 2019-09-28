@@ -11,7 +11,7 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ismail AIT ALI",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.0.0",
