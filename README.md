@@ -1,5 +1,6 @@
 [![Build Status][build-shield]]()
 [![Contributors][contributors-shield]]()
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fb17d99d-3abb-4ec8-b965-9ade814f269b/deploy-status)](https://app.netlify.com/sites/myvanillaspa/deploys)
 
 
 <!-- PROJECT LOGO -->
@@ -20,6 +21,10 @@ This is a single page application that I built using vanilla.JS for a class proj
 
 ## Motivation
 This is a web application that contains reports of my research on the variety of technologies that we were assigned to study during the summer of my 1st year of Msc. Software Quality (MQL)
+
+## Demo
+For a live demo please visit : 
+https://myvanillaspa.netlify.com/
 
 ## Installation
 
