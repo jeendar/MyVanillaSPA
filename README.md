@@ -9,9 +9,6 @@
     <img src="https://i.imgur.com/IcBR6FH.png" alt="Logo" width="350" height="100">
   </a>
 
-  <h2 align="center">MyVanillaSPA
-</h2>
-
   <p align="center">Single Page Application built using plain old Javascript
     <br />
   </p>
