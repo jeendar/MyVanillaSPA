@@ -5,9 +5,11 @@ body {
 }
 
 .logo>a>img {
-    margin: auto 30px;
-    width: 200px;
-    height: 80px;
+    margin: auto;
+    width: 300px;
+    height: 70px;
+    margin-top:10px;
+    cursor: pointer;
 }
 
 .logo a {
@@ -27,7 +29,6 @@ nav {
     background: linear-gradient(270deg, rgba(2, 0, 36, 1) 0%, rgba(51, 79, 176, 1) 53%, rgba(73, 165, 184, 1) 100%);
     position: fixed;
     top: 0;
-    min-height: 90px;
     width: 100%;
     box-shadow: 0px 1px 10px #222;
 }

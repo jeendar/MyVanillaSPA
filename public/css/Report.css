@@ -20,7 +20,7 @@
 .Path>.PathActive {
     cursor: auto;
     background-color: #F0DB4F;
-    color: #222;
+    color: #304BA8;
     border-radius: 40px;
     font-weight: bold;
 }
@@ -28,7 +28,7 @@
 .ContentPage {
     background-color: #eee;
     padding: 20px;
-    padding-top: 120px;
+    padding-top: 100px;
     color: #204a87;
     font-family: 'Montserrat', Tahoma, Verdana, sans-serif;
     min-height: 100%;
