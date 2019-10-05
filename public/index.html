@@ -20,7 +20,7 @@
 <body onload="Main()">
     <nav>
         <div class="logo">
-            <a onclick="menu.show('HomePage')">
+            <a onclick="menu.show('HomePage')" href="#HomePage">
                 <img src="imgs/logo.png" />
             </a>
         </div>
@@ -32,7 +32,7 @@
                 <a onclick="menu.show('Categories')" href="#Categories">Categories</a>
             </li>
             <li class="nav-item ">
-                <a onclick="menu.show('Courses')" href="#Courses">Courses</a>
+                <a onclick="menu.show('Courses')" href="#Courses" >Courses</a>
             </li>
             <li class="nav-item ">
                 <a onclick="menu.show('About')" href="#About">About</a>
@@ -61,8 +61,11 @@
                 <a href="#QuickInfo">Scroll down</a>
             </div>
         </section>
-        <div class="grid-container2"
-            style=" padding:40px; background: rgb(219,239,255);  background: linear-gradient(8deg, rgba(219,239,255,1) 0%, rgba(227,241,235,1) 100%); ">
+
+
+        
+       
+        <div class="grid-container2" style=" padding:40px; background: rgb(219,239,255);  background: linear-gradient(8deg, rgba(219,239,255,1) 0%, rgba(227,241,235,1) 100%); ">
             <section class="Quickinfo">
                 <img src="imgs/home/bg1.png" />
             </section>
@@ -78,6 +81,7 @@
         </div>
         <div class="grid-container2"
             style="border-top:5px solid #FFD640;padding:40px; background: rgb(255,215,64); background: linear-gradient(45deg, rgba(255,215,64,1) 0%, rgba(255,136,12,1) 100%);">
+         
             <section class="intro-text Quickinfo">
                 <h1>What's a SPA?</h1>
                 <p>
@@ -130,12 +134,18 @@
                 my summer research on Software Engineering related techniques, technologies, and methodologies. This
                 application may also represents a prototype for e-learning / tutorial websites.
             </p>
-            <img src="imgs/LogoMakr_1ajQSj.png" width="350px" />
+            <img src="imgs/LogoMakr_1ajQSj.png" width="250px" />
+            <br /><br />
+            <h2>Source Code</h2>
+            <div class="downloadBtn">
+                <img src="imgs/github.png" width="50px" />
+                <h1> <a href="https://github.com/jeendar/MyVanillaSPA" target="_blank"> View source code</a></h1>
+            </div>
             <br /><br />
             <h2>Built using</h2>
             <p>This application was built using Javascript, HTML5, and CSS3. </p>
             <div>
-                <img src="imgs/htmlcssjss.png" height="60px" width="160px" />
+                <img src="imgs/htmlcssjss.png" width="120px" />
             </div>
             <br /><br />
             <h2>Features</h2>
@@ -147,8 +157,9 @@
             <br />
             <h2>Software Quality MSc.</h2>
             <div>
-                <img src="imgs/images.png" height="80px" width="200px" />
+                <img src="imgs/images.png" width="200px" />
             </div>
+        
         </div>
     </div>
 
@@ -172,7 +183,7 @@
                 <div class="grid-item cat cat4" id="Methods">
                     <a>Methodologies</a>
                 </div>
-                <div class="grid-item cat cat1" id="Methods">
+                <div class="grid-item cat cat1" id="Devops">
                     <a>DevOps</a>
                 </div>
             </div>
@@ -180,7 +191,7 @@
     </div>
 
     <!-- Courses Page  -->
-    <div class="Hidden page" id="Courses">
+    <div class="Hidden page" id="Courses" >
         <div class="pageTitle">
             <h3 class="PageTitle">Courses</h3>
         </div>
@@ -230,12 +241,13 @@
             </div>
         </div>
         <div class="FooterBtm">
-            Developed &amp; Designed by <b style="color:#F0DB4F;"> AIT ALI Ismail </b> | Master Qualite du Logiciel
+            Developed &amp; Designed by <b style="color:#F0DB4F;"> AIT ALI Ismail </b> | Software Quality MSc.
             (MQL) | 2018-2020
         </div>
     </footer>
     <script type="text/javascript">
     </script>
+
 </body>
 
 </html>

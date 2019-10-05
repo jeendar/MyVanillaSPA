@@ -31,7 +31,6 @@
     padding-top: 100px;
     color: #204a87;
     font-family: 'Montserrat', Tahoma, Verdana, sans-serif;
-    min-height: 100%;
 }
 
 .ContentPage>h2 {
@@ -76,7 +75,11 @@
     margin: 0 auto;
     display:block ;
     width:80%;
-    height:100%;
     border-radius: 10px;
     }
 
+.btn > a{
+    color:#fff;
+    text-decoration: none;
+    padding:10px;
+}
