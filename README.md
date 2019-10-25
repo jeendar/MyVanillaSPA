@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://i.imgur.com/IcBR6FH.png" alt="Logo" width="350" height="100">
+    <img src="https://i.imgur.com/IcBR6FH.png" alt="Logo" width="350" height="100"/>
   </a>
 
   <p align="center">Single Page Application built using plain old Javascript
