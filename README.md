@@ -6,8 +6,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://i.imgur.com/IcBR6FH.png" alt="Logo" width="350" height="100"/>
+  <a href="https://github.com/othneildrew/Best-README-Template" >
+    <img src="https://i.imgur.com/IcBR6FH.png" alt="Logo" width="350" height="100" />
   </a>
 
   <p align="center">Single Page Application built using plain old Javascript
@@ -44,7 +44,7 @@ Pure HTML, CSS, and Javascript
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2019 © <a href="https://github.com/jeendar/O-Live" target="_blank">O'Live</a>.
+- Copyright 2019 © <a href="https://github.com/jeendar" target="_blank">Ismail AIT ALI</a>.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
