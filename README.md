@@ -26,7 +26,7 @@ This is a web application that contains reports of my research on the variety of
 For a live demo please visit : 
 https://myvanillaspa.netlify.com/
 
-## Installation
+## Usage
 
 - Clone this repository  `git clone https://github.com/jeendar/My-VanillaJS-SPA.git`
     
